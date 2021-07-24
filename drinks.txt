@@ -1,0 +1,13 @@
+cider: 4.0
+beer: 5.0
+wine: 12.0
+sparkling wine: 12.5
+tequila: 39.0
+rum: 40.0
+vodka: 38.5
+gin: 40.0
+whisky: 43.0
+fernet: 39.0
+americano: 14.8
+vermouth: 16.0
+campari: 25.0

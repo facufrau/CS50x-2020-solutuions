@@ -1,0 +1,41 @@
+1 - Presentation
+
+Hello, i am Facundo Frau, a civil engineer from Argentina who wants to learn to code.
+I started this course in 2020 and this is my final project.
+
+The project is called blood alcohol calculator, is a Python scripts that you can use to estimate
+and calculate how high will be the alcohol concentrationin your body after drinking different beverages.
+The project does not have a GUI, but it generates graphs that show the decreasing rate with matplotlib.
+It has a SQL database that you can use to register your username and personal data for future calculations.
+
+2 - Project schema
+
+This project is written in Python 3 (version 3.9) at the moment, also it uses matplotlib for the graphics.
+The project consists in 5 files: A drinks txt which has all the available drinks stored with alcohol % in volume
+A database.db which is a SQL database file, used for the people who want to register for later use.
+Three python files:
+
+bac_calculator.py contains all the main logic and options available for the user, this file imports everything that needs from
+both other files: calculations and helpers.
+
+the calculations.py contains functions that take drink type, volume and personal data and apply the Widmark Formula
+
+the helpers.py This file has all the complementary functions that supports the main files. Logging in,
+printing the menu, registering the user in the database, loading the drinks,
+connecting with SQL, plotting the results and asking for user data.
+
+3 - How it works
+
+Now i am going to show how my project works, this is the main menu, here you can choose between different options.
+The first one is if you don't want to enter personal data like height, gender of birth or weight. You select the drink,
+how much of that drink pure you took and will show 2 graphs.
+
+The second options is for calculating with your personal data but without storing it in the database, as a one-time use.
+When you start will ask you for your gender, height, weight and then repeats the drink calculations seen in first part.
+
+The third option is similar to the second one in the output, but requires that you have had registered before using it.
+It will prompt for your username and query the database, if not found print an error.
+
+With the fourth option you can register yourself with a unique username and your data, if the username is already registered,
+will print an error.
+
